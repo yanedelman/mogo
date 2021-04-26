@@ -56,6 +56,16 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
 }
 
+.intro__title:after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+
+    background-color: #fff;
+    margin: 60px auto;
+}
+
 
 
 /* Header */
@@ -77,6 +87,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 30px;
     font-weight: 700;
     color: #fff;
+    margin-top: 28px;
 }
 
 /* Nav */
@@ -84,6 +95,7 @@ h1, h2, h3, h4, h5, h6 {
 .nav {
     font-size: 14px;
     text-transform: uppercase;
+   margin-top: 40px;
 }
 
 .nav__link {
@@ -119,4 +131,60 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav__link:hover:after {
   opacity: 1;
+}
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    vertical-align:top ;
+    border: 3px solid #fff;
+    padding: 8px 30px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: .2s;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Slider */
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.slider__item {
+    width: 24%;
+    padding: 20px 0;
+    border-top: 3px solid #fff;
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    opacity: .7;
+}
+.slider__item.active {
+    opacity: 1;
+}
+.slider__item.active:before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #f38181;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    z-index: 1;
+}
+.slider__num {
+    font-size: 24px;
+    font-weight: 700;
 }
