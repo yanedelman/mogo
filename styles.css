@@ -198,9 +198,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section--devices {
-    background: url(../images/devices-bg.jpg) center no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
+    padding-bottom: 0;
+    background: url(/img/devices-bg.jpg);
 }
 
 .section__header {
@@ -376,4 +375,12 @@ h1, h2, h3, h4, h5, h6 {
     .services__item img {
       width: 50%;
     }
+  }
+
+  /* Devices */
+
+  .devices {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
   }
