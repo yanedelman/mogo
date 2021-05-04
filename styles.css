@@ -198,8 +198,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .section--devices {
+    margin-bottom: 80px;
     padding-bottom: 0;
     background: url(/img/devices-bg.jpg);
+    background-size: cover;
 }
 
 .section__header {
@@ -383,4 +385,78 @@ h1, h2, h3, h4, h5, h6 {
       width: 100%;
       max-width: 600px;
       margin: 0 auto;
+      position: relative;
+  }
+
+  .devices__item {
+      display: block;
+  }
+
+  .devices__item--iphone {
+    position: absolute;
+    bottom: -80px;
+    right: 0;
+    z-index: 1;
+  }
+
+  /* We Do */
+
+  .wedo {
+      display: flex;
+  }
+
+  .wedo__item {
+    width: 50%;
+  }
+
+  /* Accordion */
+
+  .accordion__item {
+      border: 1px solid #e5e5e5;
+  }
+
+  .accordion__header {
+      padding: 15px 20px 15px 60px;
+      position: relative;
+      border-bottom: 1px solid #e5e5e5;
+  }
+
+  .accordion__header:after {
+      content: "";
+      display: block;
+      width: 16px;
+      height: 16px;
+
+      border-top: 2px solid #ccc;
+      border-right: 2px solid #ccc;
+
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      z-index: 1;
+
+      transform: translateY(-50%) rotate(-45deg);
+  }
+
+  .accordion__icon {
+      position: absolute;
+      top: 50%;
+      left: 20px;
+      z-index: 1;
+
+      transform: translateY(-50%);
+  }
+
+  .accordion__content {
+    padding: 15px 20px;
+    display: none;
+    font-size: 15px;
+    color: #999;
+  }
+
+  .accordion__title {
+      font-size: 14px;
+      color: #333;
+      text-transform: uppercase;
+      font-weight: 700;
   }
